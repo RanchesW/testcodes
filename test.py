@@ -22,11 +22,11 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # Параметры подключения к SQL Server
 SQL_DRIVER = 'ODBC Driver 17 for SQL Server'
-SQL_HOST = '10.10.120.6'
-SQL_PORT = '1433'
-SQL_DATABASE = 'eho_export2acc'
-SQL_USERNAME = 'powerbi'
-SQL_PASSWORD = 'KOu%eVgq1'
+SQL_HOST = ''
+SQL_PORT = ''
+SQL_DATABASE = ''
+SQL_USERNAME = ''
+SQL_PASSWORD = ''
 
 # Создание строки подключения для pyodbc
 connection_string = (
@@ -48,10 +48,10 @@ except Exception as e:
     sys.exit(1)
 
 # Параметры подключения к Oracle
-oracle_username = "Alikhan"
-oracle_password = "M0unt2024@"
-oracle_host = "10.10.120.96"
-oracle_port = "1521"
+oracle_username = ""
+oracle_password = "@"
+oracle_host = ""
+oracle_port = ""
 oracle_service_name = "ORCL"
 
 # Кодируем пароль, если есть специальные символы
